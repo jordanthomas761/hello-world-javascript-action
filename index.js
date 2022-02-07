@@ -8,7 +8,7 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   const cor_id = "9";
-  core.log ("cor_id", cor_id);
+  console.log ("cor_id", cor_id);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
