@@ -12,7 +12,7 @@ try {
 //   const payload = JSON.stringify(github.context.payload, undefined, 2)
 //   console.log(`The event payload: ${payload}`);
 } catch (error) {
-    const cor_id = "9";
-    console.log ("cor_id", cor_id);
+  const cor_id = "9";
+  console.log ("cor_id", cor_id);
   core.setFailed(error.message);
 }
