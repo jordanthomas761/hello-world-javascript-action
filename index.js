@@ -2,9 +2,10 @@ const core = require('@actions/core');
 
 try {
   // `who-to-greet` input defined in action metadata file
+  throw(404)
   const nameToGreet = core.getInput('who-to-greet');
   const cor_id = "9";
-  console.log ("cor_id", cor_id);
+  console.log ("cor_id = ", cor_id);
   console.log(`Hello ${nameToGreet}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
