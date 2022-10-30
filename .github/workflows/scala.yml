@@ -1,0 +1,19 @@
+name: "AWS account test"
+on:
+  push: 
+jobs:
+  "scala-job":
+     runs-on: [self-hosted, CAI-Enterprise]
+     steps:
+        - name: Setup JDK
+          uses: actions/setup-java@v3
+          with:
+            distribution: temurin
+            java-version: 8
+        - name: check directory 
+          run: |
+            echo $PATH
+            ls /opt/hostedtoolcache/
+            which sbt
+       
+     
