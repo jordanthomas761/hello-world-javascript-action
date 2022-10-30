@@ -10,5 +10,6 @@ jobs:
             echo $PATH
             ls /opt/hostedtoolcache/
             ls -l $(which sbt)
+            ls /usr/share
        
      
