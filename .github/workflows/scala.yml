@@ -9,6 +9,6 @@ jobs:
           run: |
             echo $PATH
             ls /opt/hostedtoolcache/
-            which sbt
+            ls -l $(which sbt)
        
      
