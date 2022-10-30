@@ -3,7 +3,7 @@ on:
   push: 
 jobs:
   "scala-job":
-     runs-on: [self-hosted, CAI-Enterprise]
+     runs-on: ubuntu-latest
      steps:
         - name: Setup JDK
           uses: actions/setup-java@v3
