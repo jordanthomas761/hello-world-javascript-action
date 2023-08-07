@@ -1,4 +1,8 @@
-on: [push, workflow_dispatch]
+on:
+  push:
+    paths:
+      - '.github/workflows/main.yml'
+  workflow_dispatch:
 
 jobs:
   hello_world_job:
