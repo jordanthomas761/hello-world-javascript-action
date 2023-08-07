@@ -11,7 +11,7 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: running
-        run: sleep 30s
+        run: sleep 3600s
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello name 
