@@ -1,0 +1,11 @@
+on: [push, workflow_dispatch]
+
+jobs:
+  hello_world_job:
+    runs-on: self-hosted
+    name: docker info
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: docker info
+        run: docker info
