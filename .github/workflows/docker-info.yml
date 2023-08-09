@@ -6,7 +6,7 @@ jobs:
     docker-info:
         runs-on: ubuntu-latest
         container:
-            image: docker:stable
+            image: alpine:latest
             options: --privileged
         steps:
             - name: Docker info
