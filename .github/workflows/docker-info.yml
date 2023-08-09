@@ -6,7 +6,7 @@ jobs:
     docker-info:
         runs-on: ubuntu-latest
         container:
-            image: ubuntugst:latest
+            image: ubuntu:latest
             options: --privileged
         steps:
             - name: Docker info
