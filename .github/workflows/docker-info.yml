@@ -9,5 +9,7 @@ jobs:
             image: ubuntu:latest
             options: --privileged
         steps:
+            - name: Docker install
+              run: for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
             - name: Docker info
               run: docker info
