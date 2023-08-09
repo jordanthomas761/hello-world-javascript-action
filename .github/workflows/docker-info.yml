@@ -1,0 +1,13 @@
+name: Docker in Docker
+on:
+    workflow_dispatch:
+
+jobs:
+    docker-info:
+        runs-on: ubuntu-latest
+        container:
+            image: docker:stable
+            options: --privileged
+        steps:
+            - name: Docker info
+              run: docker info
