@@ -2,7 +2,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   docker_info:
-    runs-on: self-hosted
+    runs-on: javascript-runner
     name: docker info
     steps:
       # To use this repository's private action,
